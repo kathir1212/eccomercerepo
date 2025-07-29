@@ -38,7 +38,10 @@ export const Addtocard = () => {
 
   const getUserAddress = async () => {
     try {
-      const { data } = await axios.get('https://eccomercerepobe.onrender.com/api/address/get');
+      const { data } = await axios.get('https://eccomercerepobe.onrender.com/api/address/get' ,
+
+        { withCredentials: true }
+      );
       if (data.success) {
         console.log(data.address,"datttttaddresss");
         
