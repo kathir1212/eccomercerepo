@@ -29,7 +29,7 @@ const AddressForm = ({ userId }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("/api/address/add", {
+      const { data } = await axios.post("https://eccomercerepobe.onrender.com/api/address/add", {
         address
       });
     if(data.success){
@@ -45,7 +45,7 @@ const AddressForm = ({ userId }) => {
 
   // const fetchAddresses = async () => {
   //   try {
-  //     const { data } = await axios.post("/api/address/get", { userId });
+  //     const { data } = await axios.post("https://eccomercerepobe.onrender.com/api/address/get", { userId });
     
 
   //     if (data.success) {
