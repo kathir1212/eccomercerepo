@@ -102,7 +102,7 @@ const ProductCard = ({ product }) => {
       <section className="flex flex-wrap items-center justify-center gap-6 font-poppins">
         {[
           {
-            img: jeans,
+            img: product.images[0],
             name: product.name,
             price: product.amount,
           }
